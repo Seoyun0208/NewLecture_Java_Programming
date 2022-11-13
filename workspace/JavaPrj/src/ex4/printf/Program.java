@@ -11,7 +11,9 @@ public class Program {
 		kor3 = 80;
 		
 		total = kor1 + kor2 + kor3;
-		avg = total/3;
+//		 정수를 정수로 나누면 정수만 나오므로, 실수로 실수를 나누거나 형변환을 이용함!
+		avg = (float)(total / 3.0); 
+//		avg = total / 3.0f; 
 		
 //		--------- 성적 출력 부분 ---------
 		
