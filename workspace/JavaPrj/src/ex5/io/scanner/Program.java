@@ -1,4 +1,7 @@
-package ex4.printf;
+package ex5.io.scanner;
+
+import java.util.Scanner;
+
 public class Program {
 	public static void main(String[] args) {
 		
@@ -6,16 +9,30 @@ public class Program {
 		int total;
 		float avg;
 		
-		kor1 = 50;
-		kor2 = 60;
-		kor3 = 80;
+		Scanner scan = new Scanner(System.in);
 		
-		total = kor1 + kor2 + kor3;
-//		 정수를 정수로 나누면 정수만 나오므로, 실수로 실수를 나누거나 형변환을 이용함!
-		avg = (float)(total / 3.0); 
-//		avg = total / 3.0f; 
+		kor1 = 0;
+		kor2 = 0;
+		kor3 = 0;
+		
+//		--------- 성적 입력 부분 ---------
+		System.out.println("┌─────────────────────────┐");
+		System.out.println("│       Score Input       │");
+		System.out.println("└─────────────────────────┘");
+		System.out.print("국어1: ");
+		kor1 = scan.nextInt();
+		System.out.print("국어2: ");
+		kor2 = scan.nextInt();
+		System.out.print("국어3: ");
+		kor3 = scan.nextInt();
+		System.out.println("───────────────────────────");
 		
 //		--------- 성적 출력 부분 ---------
+		total = kor1 + kor2 + kor3;
+//		정수를 정수로 나누면 정수만 나오므로, 실수로 실수를 나누거나 형변환을 이용함!
+		
+		avg = (float)(total / 3.0); 
+//		avg = total / 3.0f; 
 		
 		System.out.println("┌─────────────────────────┐");
 		System.out.println("│       Score Output      │");
