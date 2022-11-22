@@ -23,7 +23,7 @@ public class Program {
 		kor1 = scan.nextInt();
 		
 //		비교 연산자 예시
-		System.out.println(0<= kor1 && kor1 <= 100);
+		System.out.println(0<= kor1 && kor1 <= 100 ? "올바른 값입니다." : "올바르지 않은 값입니다.");
 		
 		System.out.print("국어2: ");
 		kor2 = scan.nextInt();
